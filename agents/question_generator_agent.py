@@ -1,0 +1,23 @@
+class QuestionGeneratorAgent:
+    def run(self, product: dict) -> dict:
+        return {
+            "informational": [
+                f"What is {product['name']}?",
+                "What does Vitamin C do for skin?"
+            ],
+            "usage": [
+                "How should this serum be applied?",
+                "Can it be used daily?"
+            ],
+            "safety": [
+                "Are there any side effects?",
+                "Is it suitable for sensitive skin?"
+            ],
+            "purchase": [
+                "What is the price of the product?",
+                "Is it worth the cost?"
+            ],
+            "comparison": [
+                "How does this compare with other Vitamin C serums?"
+            ]
+        }
